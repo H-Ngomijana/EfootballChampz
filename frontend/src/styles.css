@@ -459,3 +459,20 @@ h1, h2, h3, h4, h5, h6, .MuiTypography-h4, .MuiTypography-h5 { font-family: 'Orb
 	}
 }
 
+.quad-title-box {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  border: 2px solid #00f0ff;
+  border-radius: 12px;
+  padding: 12px 24px;
+  display: inline-block;
+  box-shadow: 0 0 12px #00f0ff;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.quad-title-box h1 {
+  font-size: 1.5rem;
+  color: #00f0ff;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif; /* Optional: futuristic font */
+}

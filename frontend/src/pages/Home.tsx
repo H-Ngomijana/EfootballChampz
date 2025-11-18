@@ -80,7 +80,7 @@ export default function Home() {
     <div>
       <Box sx={{ textAlign: 'center', mb: 4 }}>
         <Typography variant="h3" sx={{ fontFamily: 'Orbitron', fontWeight: 700, color: '#00e5ff', textShadow: '0 0 20px rgba(0,229,255,0.5)' }}>
-          ⚽ eFootball Dashboard
+           Efootball Tournaments
         </Typography>
         <Typography variant="h6" sx={{ color: '#b0bec5', mt: 1 }}>
           Tournament Management System
