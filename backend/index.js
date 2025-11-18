@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
-const app = express();
-const PORT = process.env.PORT || 4000;
+const dotenv = require('dotenv');
+const db = require('./data');
+
 
 app.use(cors());
 app.use(express.json());
@@ -116,3 +117,7 @@ app.get('/api/tournaments/:id/winner', async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Backend listening on http://localhost:${PORT}`));
+
+app.get('/', (req, res) => {
+  res.send('⚽ Welcome to the FootballChamp API');
+});
