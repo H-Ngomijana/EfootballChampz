@@ -3,14 +3,18 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const db = require('./data');
 
-
-app.use(cors());
-app.use(express.json());
-
-const dotenv = require('dotenv');
 dotenv.config();
 
-const db = require('./data');
+const app = express();
+const PORT = process.env.PORT || 4000;
+
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+app.use(express.json());
+
 
 // Create player
 app.post('/api/players', async (req, res) => {
